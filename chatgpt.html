@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>文件管理</title>
+    <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+    <h1>文件管理</h1>
+    <form id="addFolderForm">
+      <label for="folderName">文件夹名称：</label>
+      <input type="text" id="folderName" name="folderName">
+      <input type="submit" value="新建文件夹">
+    </form>
+    <form>
+      <input type="file" id="fileInput">
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>名称</th>
+          <th>大小</th>
+          <th>日期</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="folderList">
+        <tr>
+          <td>文件夹 1</td>
+          <td>-</td>
+          <td>-</td>
+          <td><button class="delete-button">删除</button></td>
+        </tr>
+        <tr>
+          <td>文件夹 2</td>
+          <td>-</td>
+          <td>-</td>
+          <td><button class="delete-button">删除</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="js/form.js"></script>
+  </body>
+</html>
